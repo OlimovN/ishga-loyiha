@@ -7,6 +7,7 @@ import Contact from "./pages/contact";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
+  const [darkMode, setDarkMode] = useState(false); // Dark mode state
 
   useEffect(() => {
     setTimeout(() => {
@@ -14,15 +15,20 @@ const App = () => {
     }, 2000);
   }, []);
 
+  const toggleDarkMode = () => {
+    setDarkMode((prevMode) => !prevMode);
+    document.body.classList.toggle("dark-mode", !darkMode);
+  };
+
   return (
     <Router>
-      <div>
+      <div className={darkMode ? "dark-mode" : ""}>
         {loading ? (
           <div className="loader"></div>
         ) : (
           <>
-            <h1>Salom,  Xush Kelibsiz!</h1>
-            <nav className="navbar">
+            <h1>Salom, Xush Kelibsiz!</h1>
+                      <nav className="navbar">
               <ul>
                 <li>
                   <Link to="/">O'zim Haqimda</Link>

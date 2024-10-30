@@ -53,8 +53,8 @@ const Contact = () => {
 
       <h3 style={styles.subtitle}>Qo'shimcha Ma'lumotlar:</h3>
       <p style={styles.contactInfo}>Telefon: +998 (88) 273-22-36</p>
-      <p style={styles.contactInfo}> Qo'shimcha telefon: +998 (90) 273-22-36</p>
-      <p style={styles.contactInfo}>Manzil: Yozyavon,Farg'ona, O'zbekiston</p>
+      <p style={styles.contactInfo}>Qo'shimcha telefon: +998 (90) 273-22-36</p>
+      <p style={styles.contactInfo}>Manzil: Yozyavon, Farg'ona, O'zbekiston</p>
       <a href="https://satellites.pro/Google_plan/Yozyovon_map">Location</a>
 
       <form onSubmit={handleSubmit} style={styles.form}>
@@ -95,19 +95,19 @@ const styles = {
     margin: "0 auto",
     padding: "20px",
     fontFamily: "Arial, sans-serif",
-    color: "#333",
+    color: "#000",
   },
   title: {
     fontSize: "1.8em",
     fontWeight: "bold",
     marginBottom: "15px",
-    color: "#333",
+    color: "#000",
   },
   description: {
     fontSize: "1.1em",
     lineHeight: "1.6",
     marginBottom: "20px",
-    color: "#555",
+    color: "#000",
   },
   socialList: {
     listStyleType: "none",
@@ -118,28 +118,22 @@ const styles = {
   },
   socialLink: {
     textDecoration: "none",
-    color: "#0077b5",
+    color: "#CC2B52",
     fontSize: "1em",
     fontWeight: "600",
   },
+
   subtitle: {
     fontSize: "1.4em",
     fontWeight: "600",
     marginBottom: "10px",
-    color: "#444",
+    color: "#000",
   },
-  contactInfo: {
-    fontSize: "1em",
-    color: "#555",
-    marginBottom: "8px",
-  },
-  form: {
-    display: "flex",
-    flexDirection: "column",
-    gap: "15px",
-  },
+  contactInfo: { fontSize: "1em", color: "#000", marginBottom: "8px" },
+  form: { display: "flex", flexDirection: "column", gap: "15px" },
   input: {
     padding: "10px",
+    backgroundColor: "#4f807d",
     fontSize: "1em",
     borderRadius: "4px",
     border: "1px solid #ccc",
@@ -150,13 +144,14 @@ const styles = {
     borderRadius: "4px",
     border: "1px solid #ccc",
     minHeight: "100px",
+    backgroundColor: "#88dd77",
   },
   button: {
     padding: "10px",
     fontSize: "1em",
     fontWeight: "bold",
-    backgroundColor: "#0077b5",
-    color: "#fff",
+    backgroundColor: "#9aaf73",
+    color: "#000",
     border: "none",
     borderRadius: "4px",
     cursor: "pointer",
