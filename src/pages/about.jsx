@@ -7,9 +7,13 @@ const Home = () => {
       <h2 style={styles.title}>O'zim Haqimda</h2>
       <h1>Olimov Nurmuhammad Yoqubjon o'g'li</h1>
       <p style={styles.description}>
-         Dasturlash va veb-ishlanma sohasida tajribaga ega
-        bo'lib, yangi texnologiyalar va dizayn yo'nalishida o'zimni
-        rivojlantirishni maqsad qilganman. 
+        Farg'oba viloyati Yozyavon tumani Eshonto'pi qishlog'ida tavvallud
+        topganman .<b>Yoshim:16 da . Hozirda 10-sinfda tahsil olaman</b>
+      </p>
+      <p style={styles.description}>
+        Men IT kurslarini Njaot Talim oquv kurslarini tamomlaganman . Dasturlash
+        va veb-ishlanma sohasida tajribaga ega bo'lib, yangi texnologiyalar va
+        dizayn yo'nalishida o'zimni rivojlantirishni maqsad qilganman.
       </p>
 
       <h3 style={styles.sectionTitle}>Qiziqishlarim:</h3>
@@ -19,14 +23,23 @@ const Home = () => {
           <p style={styles.subText}>Pubg, Call of Duty, PES</p>
         </li>
         <li style={styles.listItem}>
-          Sport <span style={styles.subText}>(Futbol, Volleyball)</span>
+          Sport <p style={styles.subText}>Futbol, Volleyball</p>
         </li>
       </ul>
 
       <h3 style={styles.sectionTitle}>Malakalarim:</h3>
       <ul style={styles.list}>
-        <li style={styles.listItem}>JavaScript, React, Node.js</li>
-        <li style={styles.listItem}>HTML, CSS, Tailwind CSS</li>
+        <li style={styles.listItem}>
+          JavaScript, React, Node.js Type Script va Next.js
+          <p style={styles.subText}>
+            Asosan React va JavaScript dan foydalanaman . Node.js , Next.js va
+            TypeScript dan ham habarim bor
+          </p>
+        </li>
+        <li style={styles.listItem}>
+          HTML, CSS, Tailwind CSS
+          <p style={styles.subText}> HTML CSS va Talwind CSS dan tolaqonli foydalana olaman </p>
+        </li>
         <li style={styles.listItem}>
           API integratsiyasi va ma'lumotlar bilan ishlash
         </li>
@@ -50,26 +63,26 @@ const styles = {
   container: {
     maxWidth: "600px",
     margin: "0 auto",
-    padding: "20px",
     fontFamily: "Arial, sans-serif",
   },
   title: {
+    paddingLeft:"220px",
     fontSize: "1.8em",
     fontWeight: "bold",
-    marginBottom: "15px",
-    color: "#333",
+    marginBottom: "45px",
+    color: "#000",
   },
   description: {
     fontSize: "1.1em",
     lineHeight: "1.6",
     marginBottom: "20px",
-    color: "#555",
+    color: "#000",
   },
   sectionTitle: {
     fontSize: "1.4em",
     fontWeight: "600",
     marginBottom: "10px",
-    color: "#444",
+    color: "#000",
   },
   list: {
     listStyleType: "disc",
@@ -79,11 +92,11 @@ const styles = {
   listItem: {
     marginBottom: "8px",
     fontSize: "1em",
-    color: "#333",
+    color: "#000",
   },
   subText: {
     fontSize: "0.9em",
-    color: "#777",
+    color: "#000",
     marginLeft: "8px",
   },
   imageContainer: {
@@ -92,12 +105,12 @@ const styles = {
     marginTop: "20px",
   },
   image: {
-    width: "150px",
-    height: "150px",
-    borderRadius: "50%",
+    width: "400px",
+    height: "300px",
+    borderRadius: "25%",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)",
     objectFit: "cover",
-  },
+    },
 };
 
 export default Home;

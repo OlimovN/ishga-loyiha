@@ -55,7 +55,12 @@ const Contact = () => {
       <p style={styles.contactInfo}>Telefon: +998 (88) 273-22-36</p>
       <p style={styles.contactInfo}>Qo'shimcha telefon: +998 (90) 273-22-36</p>
       <p style={styles.contactInfo}>Manzil: Yozyavon, Farg'ona, O'zbekiston</p>
-      <a href="https://satellites.pro/Google_plan/Yozyovon_map">Location</a>
+      <a
+        href="https://satellites.pro/Google_plan/Yozyovon_map"
+        style={styles.locationLink}
+      >
+        Location
+      </a>
 
       <form onSubmit={handleSubmit} style={styles.form}>
         <input
@@ -121,8 +126,8 @@ const styles = {
     color: "#CC2B52",
     fontSize: "1em",
     fontWeight: "600",
+    transition: "color 0.3s ease",
   },
-
   subtitle: {
     fontSize: "1.4em",
     fontWeight: "600",
@@ -130,13 +135,26 @@ const styles = {
     color: "#000",
   },
   contactInfo: { fontSize: "1em", color: "#000", marginBottom: "8px" },
-  form: { display: "flex", flexDirection: "column", gap: "15px" },
+  locationLink: {
+    color: "#CC2B52",
+    textDecoration: "none",
+    fontSize: "1em",
+    fontWeight: "600",
+  },
+  form: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "15px",
+    marginTop: "20px",
+  },
   input: {
     padding: "10px",
-    backgroundColor: "#4f807d",
+    backgroundColor: "#f0f0f0",
     fontSize: "1em",
     borderRadius: "4px",
     border: "1px solid #ccc",
+    boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.1)",
+    transition: "box-shadow 0.3s ease",
   },
   textarea: {
     padding: "10px",
@@ -144,17 +162,21 @@ const styles = {
     borderRadius: "4px",
     border: "1px solid #ccc",
     minHeight: "100px",
-    backgroundColor: "#88dd77",
+    backgroundColor: "#f8f8f8",
+    boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.1)",
+    transition: "box-shadow 0.3s ease",
   },
   button: {
     padding: "10px",
     fontSize: "1em",
     fontWeight: "bold",
     backgroundColor: "#9aaf73",
-    color: "#000",
+    color: "#555",
     border: "none",
     borderRadius: "4px",
     cursor: "pointer",
+    boxShadow: "0px 3px 7px rgba(0, 0, 0, 0.2)",
+    transition: "background-color 0.3s ease, transform 0.3s ease",
   },
 };
 
